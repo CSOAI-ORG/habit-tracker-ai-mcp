@@ -36,11 +36,11 @@ async def handle_list_tools() -> list[Tool]:
 async def handle_call_tool(name: str, arguments: Any | None) -> list[types.TextContent | types.ImageContent | types.EmbeddedResource]:
     args = arguments or {}
     if name == "log_habit":
-            _store.setdefault(args["habit"], []).append(datetime.now().strftime("%Y-%m-%d"))
-            return [TextContent(type="text", text=json.dumps({"status": "logged"}, indent=2))]
-        if name == "get_streaks":
-            streaks = {k: len(set(v)) for k, v in _store.items()}
-            return [TextContent(type="text", text=json.dumps(streaks, indent=2))]
+        _store.setdefault(args["habit"], []).append(datetime.now().strftime("%Y-%m-%d"))
+        return [TextContent(type="text", text=json.dumps({"status": "logged"}, indent=2))]
+    if name == "get_streaks":
+        streaks = {k: len(set(v)) for k, v in _store.items()}
+        return [TextContent(type="text", text=json.dumps(streaks, indent=2))]
     return [TextContent(type="text", text=json.dumps({"error": "Unknown tool"}, indent=2))]
 
 async def main():
