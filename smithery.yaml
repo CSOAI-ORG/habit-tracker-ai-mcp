@@ -1,0 +1,10 @@
+name: habit-tracker-ai-mcp
+description: "MEOK AI Labs — Habit Tracker tools for AI agents and LLMs"
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/habit-tracker-ai-mcp
+license: MIT
+categories: [Productivity, Personal Development]
+tags: [habit-tracking, goal-setting, behavior-change, daily-habits, self-improvement]
+runtime: python
+entrypoint: server.py
