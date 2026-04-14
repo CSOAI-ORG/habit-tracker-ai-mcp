@@ -1,21 +1,6 @@
 {
   "name": "habit-tracker-ai-mcp",
-  "description": "MEOK AI Labs \u2014 Habit Tracker tools for AI agents and LLMs",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/habit-tracker-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
-  "tools": [
-    "log_habit",
-    "get_streaks"
-  ],
-  "categories": [
-    "Productivity",
-    "Personal Development"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+  "description": "Habit Tracker Ai Mcp \u2014 Track daily habits, streaks, and accountability metrics.",
+  "version": "1.0.0",
+  "tools": []
 }
