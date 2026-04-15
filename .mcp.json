@@ -1,6 +1,6 @@
 {
   "name": "habit-tracker-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Track habits, streaks, and build accountability.",
+  "description": "Habit Tracker Ai MCP server. Tools: create habit, log completion, get habit streak. Built by MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {

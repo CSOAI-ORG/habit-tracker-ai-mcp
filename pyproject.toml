@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 [project]
 name = "habit-tracker-ai-mcp"
 version = "1.0.0"
-description = "MEOK AI Labs — habit-tracker-ai-mcp"
+description = "Habit Tracker Ai MCP server. Tools: create habit, log completion, get habit streak. Built by MEOK AI Labs."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
 authors = [{name = "MEOK AI Labs", email = "nicholas@meok.ai"}]
