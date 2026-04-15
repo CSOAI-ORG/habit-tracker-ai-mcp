@@ -1,0 +1,10 @@
+{
+  "name": "habit-tracker-ai-mcp",
+  "description": "MEOK AI Labs \u2014 habit-tracker-ai-mcp",
+  "vendor": "MEOK AI Labs",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/habit-tracker-ai-mcp",
+  "license": "MIT",
+  "runtime": "python",
+  "entryPoint": "mcp-wrapper.py"
+}
