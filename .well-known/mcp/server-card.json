@@ -1,0 +1,64 @@
+{
+  "name": "habit-tracker-ai",
+  "description": "Track habits, streaks, and build accountability.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/habit-tracker-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "create_habit",
+      "description": "Create new habit"
+    },
+    {
+      "name": "log_completion",
+      "description": "Log habit completion"
+    },
+    {
+      "name": "get_habit_streak",
+      "description": "Get current streak"
+    },
+    {
+      "name": "get_habit_history",
+      "description": "Get habit history"
+    },
+    {
+      "name": "get_all_habits",
+      "description": "Get all habits"
+    },
+    {
+      "name": "delete_habit",
+      "description": "Delete habit"
+    },
+    {
+      "name": "get_weekly_stats",
+      "description": "Get weekly stats"
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
