@@ -1,25 +1,55 @@
 name: habit-tracker-ai-mcp
-description: MEOK AI Labs MCP Server
+description: Track habits, streaks, and build accountability.
 version: 1.0.0
 tools:
 - name: create_habit
   description: Create new habit
-  parameters: []
+  parameters:
+  - name: name
+    type: string
+    required: true
+  - name: frequency
+    type: string
+    required: false
+  - name: reminder_time
+    type: string
+    required: false
 - name: log_completion
   description: Log habit completion
-  parameters: []
+  parameters:
+  - name: habit_id
+    type: string
+    required: true
+  - name: date
+    type: string
+    required: false
+  - name: notes
+    type: string
+    required: false
 - name: get_habit_streak
   description: Get current streak
-  parameters: []
+  parameters:
+  - name: habit_id
+    type: string
+    required: true
 - name: get_habit_history
   description: Get habit history
-  parameters: []
+  parameters:
+  - name: habit_id
+    type: string
+    required: true
+  - name: days
+    type: integer
+    required: false
 - name: get_all_habits
   description: Get all habits
   parameters: []
 - name: delete_habit
   description: Delete habit
-  parameters: []
+  parameters:
+  - name: habit_id
+    type: string
+    required: true
 - name: get_weekly_stats
   description: Get weekly stats
   parameters: []

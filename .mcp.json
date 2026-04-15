@@ -1,6 +1,6 @@
 {
   "name": "habit-tracker-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs MCP Server",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Track habits, streaks, and build accountability.",
   "version": "1.0.0",
   "tools": [
     {
@@ -8,8 +8,20 @@
       "description": "Create new habit",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "frequency": {
+            "type": "string"
+          },
+          "reminder_time": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ]
       }
     },
     {
@@ -17,8 +29,20 @@
       "description": "Log habit completion",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {
+          "habit_id": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "habit_id"
+        ]
       }
     },
     {
@@ -26,8 +50,14 @@
       "description": "Get current streak",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {
+          "habit_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "habit_id"
+        ]
       }
     },
     {
@@ -35,8 +65,17 @@
       "description": "Get habit history",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {
+          "habit_id": {
+            "type": "string"
+          },
+          "days": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "habit_id"
+        ]
       }
     },
     {
@@ -53,8 +92,14 @@
       "description": "Delete habit",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {
+          "habit_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "habit_id"
+        ]
       }
     },
     {
