@@ -1,3 +1,5 @@
+[![habit-tracker-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/habit-tracker-ai-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/habit-tracker-ai-mcp)
+
 <div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/habit-tracker-ai-mcp)](https://github.com/CSOAI-ORG/habit-tracker-ai-mcp/stargazers)
