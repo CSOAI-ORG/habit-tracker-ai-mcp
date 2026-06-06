@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""MEOK AI Labs — habit-tracker-ai-mcp MCP Server. Track habits, streaks, and build accountability."""
+"""
+Buy Pro: https://www.csoai.org/checkout
+MEOK AI Labs — habit-tracker-ai-mcp MCP Server. Track habits, streaks, and build accountability."""
 
 import json
 from datetime import datetime, timedelta, timezone
@@ -7,7 +9,6 @@ from typing import Any
 import uuid
 import sys, os
 
-sys.path.insert(0, os.path.expanduser("~/clawd/meok-labs-engine/shared"))
 from auth_middleware import check_access
 from persistence import ServerStore
 from mcp.server.fastmcp import FastMCP
@@ -70,7 +71,7 @@ def create_habit(name: str, frequency: str = "daily", reminder_time: str = "", a
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     habit = {
@@ -128,7 +129,7 @@ def log_completion(habit_id: str, date: str = "", notes: str = "", api_key: str 
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     if not date:
@@ -194,7 +195,7 @@ def get_habit_streak(habit_id: str, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     habit = _db.hget("habits", habit_id)
@@ -248,7 +249,7 @@ def get_habit_history(habit_id: str, days: int = 30, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     completions = [
@@ -297,7 +298,7 @@ def get_all_habits(api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     habits = list(_db.hgetall("habits").values())
@@ -344,7 +345,7 @@ def delete_habit(habit_id: str, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     if _db.hget("habits", habit_id):
@@ -397,7 +398,7 @@ def get_weekly_stats(api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     cutoff = datetime.now() - timedelta(days=7)
@@ -413,5 +414,8 @@ def get_weekly_stats(api_key: str = "") -> str:
     })
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()
