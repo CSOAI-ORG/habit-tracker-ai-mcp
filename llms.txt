@@ -1,0 +1,34 @@
+# Habit Tracker Ai MCP
+
+> Track habits, streaks, and build accountability
+
+`habit-tracker-ai-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+
+## Install
+
+```bash
+pip install habit-tracker-ai-mcp
+```
+
+Or run without installing:
+
+```bash
+uvx habit-tracker-ai-mcp
+```
+
+## Tools
+
+- `create_habit` — Create new habit
+- `log_completion` — Log habit completion
+- `get_habit_streak` — Get current streak
+- `get_habit_history` — Get habit history
+- `get_all_habits` — Get all habits
+- `delete_habit` — Delete habit
+- `get_weekly_stats` — Get weekly stats
+
+## Links
+
+- Source: https://github.com/CSOAI-ORG/habit-tracker-ai-mcp
+- PyPI: https://pypi.org/project/habit-tracker-ai-mcp/
+- MEOK AI Labs: https://meok.ai
+- Council of AI: https://councilof.ai
