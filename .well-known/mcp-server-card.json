@@ -1,0 +1,34 @@
+{
+  "name": "habit-tracker-ai-mcp",
+  "title": "Habit Tracker Ai Mcp",
+  "description": "Habit Tracker Ai MCP server. Tools: create habit, log completion, get habit streak. Built by MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "create_habit"
+    },
+    {
+      "name": "log_completion"
+    },
+    {
+      "name": "get_habit_streak"
+    },
+    {
+      "name": "get_habit_history"
+    },
+    {
+      "name": "get_all_habits"
+    },
+    {
+      "name": "delete_habit"
+    },
+    {
+      "name": "get_weekly_stats"
+    }
+  ]
+}

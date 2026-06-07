@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """
-Buy Pro: https://www.csoai.org/checkout
 MEOK AI Labs — habit-tracker-ai-mcp MCP Server. Track habits, streaks, and build accountability."""
 
 import json

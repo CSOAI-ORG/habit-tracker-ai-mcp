@@ -1,34 +1,42 @@
-# Habit Tracker Ai MCP
-
-> Track habits, streaks, and build accountability
-
-`habit-tracker-ai-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+# habit-tracker-ai-mcp
+# **MCP server for habit tracker ai mcp operations**
 
 ## Install
-
 ```bash
 pip install habit-tracker-ai-mcp
 ```
 
-Or run without installing:
-
-```bash
-uvx habit-tracker-ai-mcp
-```
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
 
 ## Tools
 
-- `create_habit` — Create new habit
-- `log_completion` — Log habit completion
-- `get_habit_streak` — Get current streak
-- `get_habit_history` — Get habit history
-- `get_all_habits` — Get all habits
-- `delete_habit` — Delete habit
-- `get_weekly_stats` — Get weekly stats
+### `create_habit`
+Create new habit
 
-## Links
+### `log_completion`
+Log habit completion
 
-- Source: https://github.com/CSOAI-ORG/habit-tracker-ai-mcp
-- PyPI: https://pypi.org/project/habit-tracker-ai-mcp/
-- MEOK AI Labs: https://meok.ai
-- Council of AI: https://councilof.ai
+### `get_habit_streak`
+Get current streak
+
+### `get_habit_history`
+Get habit history
+
+### `get_all_habits`
+Get all habits
+
+### `delete_habit`
+Delete habit
+
+### `get_weekly_stats`
+Get weekly stats
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.
