@@ -4,9 +4,8 @@
   "version": "1.0.8",
   "description": "Habit Tracker Ai MCP Server by MEOK AI Labs",
   "repository": {
-    "type": "git",
     "url": "https://github.com/CSOAI-ORG/habit-tracker-ai-mcp",
-    "source": "https://github.com/CSOAI-ORG/habit-tracker-ai-mcp"
+    "source": "github"
   },
   "packages": [
     {
